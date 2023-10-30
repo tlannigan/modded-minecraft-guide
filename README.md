@@ -77,7 +77,7 @@
 
 ### My FTB App opens a popup with errors!
   - The FTB App says I don't own Minecraft!
-  - Make sure you own Minecraft on a Microsoft account. If you bought Minecraft when it was still using Mojang accounts, there was a deadline on Sept. 19th, 2023 to migrate to a Microsoft account. If you did not migrate, you do not own Minecraft anymore and will be unable to login with your Mojang credentials. Microsoft did send out a mercy email on that day which will allow anyone that didn't meet the deadline to get a new Minecraft account attached to their Microsoft account, up to 90 days from the deadline.
+    - Make sure you own Minecraft on a Microsoft account. If you bought Minecraft when it was still using Mojang accounts, there was a deadline on Sept. 19th, 2023 to migrate to a Microsoft account. If you did not migrate, you do not own Minecraft anymore and will be unable to login with your Mojang credentials. Microsoft did send out a mercy email on that day which will allow anyone that didn't meet the deadline to get a new Minecraft account attached to their Microsoft account, up to 90 days from the deadline.
 
 ### An error occurred whilst launching... Failed to execute asset update task:
   - Check your FTB App's `latest.log` for lines that say `Tried URL: https://resources.download.minecraft.com/blah/blahblahblah...`. Take note specifically of the `/blah/blahblahblah` part. If only one `/blah/blahblahblah` is referenced in your log, you can replace it in your install. It is a vanilla Minecraft file that the launcher requires:
@@ -88,8 +88,8 @@
 
 ### My game crashed and I have a file called `hs_err_pidXXXX.log` in my modpack folder now!
   - Open the log with any text editor. Check for the mention of `atio6axx.dll` under `Problematic frame:`, if you find it it means there's a problem with an AMD driver on your computer.
-  - If you use an AMD video card, you need to update drivers for it.
-  - If you don't have an AMD video card but have an AMD CPU, your computer may be using your integrated GPU instead of your dedicated GPU. Make sure your monitor is plugged into your GPU and not your motherboard. If that's not the issue, Google "Nvidia changing preferred GPU".
+    - If you use an AMD video card, you need to update drivers for it.
+    - If you don't have an AMD video card but have an AMD CPU, your computer may be using your integrated GPU instead of your dedicated GPU. Make sure your monitor is plugged into your GPU and not your motherboard. If that's not the issue, Google "Nvidia changing preferred GPU".
 
 ### Trying to sign in through Microsoft is giving me "We can't find the FTB App"!
   - If you are on a Mac use a browser other than Safari to log in with. When you login you can copy the URL at the top and paste it into another browser of your choice.
