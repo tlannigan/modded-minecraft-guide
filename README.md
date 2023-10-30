@@ -36,6 +36,14 @@
 	- Play the game for a minute
 	- Run `/sparkc profile stop`
 
+### My game crashed and I have a file called `hs_err_pidXXXX.log` in my modpack folder now!
+  - Open the log with any text editor. Check for the mention of `atio6axx.dll` under `Problematic frame:`, if you find it it means there's a problem with an AMD driver on your computer.
+    - If you use an AMD video card, you need to update drivers for it.
+    - If you don't have an AMD video card but have an AMD CPU, your computer may be using your integrated GPU instead of your dedicated GPU. Make sure your monitor is plugged into your GPU and not your motherboard. If that's not the issue, Google "Nvidia changing preferred GPU".
+
+### Screen turns black when holding items
+  - Using integrated graphics (iGPU) seems to cause this issue with older versions of Minecraft, most commonly on version 1.7. You can try updating your iGPU drivers or install a discrete GPU into your computer.
+
 # FTB App (Minecraft launcher)
 
 - This section is for those using the FTB App and references specific file paths that the program defaults to.
@@ -86,14 +94,6 @@
 	- In your File Explorer navigate to `C:/Users/<your_username>/AppData/Local/.ftba/bin/assets/objects` and find the folder with the first `blah` in your URL (if your URL ended in `/e8/e8fddnjabdsf` find the `e8` folder).
 	- Copy the downloaded file into this directory and relaunch your FTB App.
 
-### My game crashed and I have a file called `hs_err_pidXXXX.log` in my modpack folder now!
-  - Open the log with any text editor. Check for the mention of `atio6axx.dll` under `Problematic frame:`, if you find it it means there's a problem with an AMD driver on your computer.
-    - If you use an AMD video card, you need to update drivers for it.
-    - If you don't have an AMD video card but have an AMD CPU, your computer may be using your integrated GPU instead of your dedicated GPU. Make sure your monitor is plugged into your GPU and not your motherboard. If that's not the issue, Google "Nvidia changing preferred GPU".
-
 ### Trying to sign in through Microsoft is giving me "We can't find the FTB App"!
   - If you are on a Mac use a browser other than Safari to log in with. When you login you can copy the URL at the top and paste it into another browser of your choice.
-
-### Screen turns black when holding items
-  - Using integrated graphics (iGPU) seems to cause this issue with older versions of Minecraft, most commonly on version 1.7. You can try updating your iGPU drivers or install a discrete GPU into your computer.
 
