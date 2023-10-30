@@ -58,15 +58,15 @@
   - Manually providing your logs [referenced in the next section](#which-logs-should-i-send)
 
 ### Which logs should I send?
-  - My server crashed:
+  - My server is having issues:
     - For server logs, you'll have to know where you put your server's folder, or find it on your hosting provider's control panel or FTP (depending on your host).
 	- Reference the [general logs section](#logs) and provide your `latest.log` and any crash reports that were created at the time the server crashed.
 
-  - My game client crashed:
+  - My game client is having issues:
     - FTB modpack folders on Windows systems are stored by default in `C:/Users/<your_username>/AppData/Local/.ftba/instances/<your_instance_ID>`
     - Reference the [general logs section](#logs) and provide your `latest.log`, any crash reports that were created at the time you crashed, and look for any Java runtime crashes.
 
-  - My FTB App is showing errors:
+  - My FTB App is having issues:
     - FTB App folders on Windows systems are stored by default in `C:/Users/<your_username>/AppData/Local/.ftba`
 	- In your FTB App's folder look for a folder called `logs`, open it and find a file called `latest.log` (or just `latest` if you have file extensions disabled).
 
@@ -78,12 +78,6 @@
 ### My FTB App opens a popup with errors!
   - The FTB App says I don't own Minecraft!
   - Make sure you own Minecraft on a Microsoft account. If you bought Minecraft when it was still using Mojang accounts, there was a deadline on Sept. 19th, 2023 to migrate to a Microsoft account. If you did not migrate, you do not own Minecraft anymore and will be unable to login with your Mojang credentials. Microsoft did send out a mercy email on that day which will allow anyone that didn't meet the deadline to get a new Minecraft account attached to their Microsoft account, up to 90 days from the deadline.
-
-### My game client crashed!
-  - If nothing else in the FAQ references your issue, post in #help-and-support with as much detail as you can and provide your logs (see #2).
-
-### My server crashed!
-  - If nothing else in the FAQ references your issue, post in #help-and-support with as much detail as you can and provide your logs (see #2).
 
 ### An error occurred whilst launching... Failed to execute asset update task:
   - Check your FTB App's `latest.log` for lines that say `Tried URL: https://resources.download.minecraft.com/blah/blahblahblah...`. Take note specifically of the `/blah/blahblahblah` part. If only one `/blah/blahblahblah` is referenced in your log, you can replace it in your install. It is a vanilla Minecraft file that the launcher requires:
