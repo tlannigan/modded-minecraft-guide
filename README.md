@@ -46,14 +46,14 @@
 
 - Logs can be provided in one of two ways:
   - FTB distributes a debugging tool to share your logs to others, called the `FTB Debug` tool. This tool is available for several operating systems and architectures:
-    - **Windows** https://dist.creeper.host/tools/ftb-debug/ftb-debug.exe
-    - **Windows (Arm)** https://dist.creeper.host/tools/ftb-debug/ftb-debug-arm64.exe
-    - **MacOS** https://dist.creeper.host/tools/ftb-debug/ftb-debug-macos
-    - **MacOS (Arm/M1/M2)** https://dist.creeper.host/tools/ftb-debug/ftb-debug-macos-arm64
-    - **Linux** https://dist.creeper.host/tools/ftb-debug/ftb-debug-linux
-    - **Linux (Arm)** https://dist.creeper.host/tools/ftb-debug/ftb-debug-linux-arm
+    - [Windows](https://dist.creeper.host/tools/ftb-debug/ftb-debug.exe)
+    - [Windows (Arm)](https://dist.creeper.host/tools/ftb-debug/ftb-debug-arm64.exe)
+    - [MacOS](https://dist.creeper.host/tools/ftb-debug/ftb-debug-macos)
+    - [MacOS (Arm/M1/M2)](https://dist.creeper.host/tools/ftb-debug/ftb-debug-macos-arm64)
+    - [Linux](https://dist.creeper.host/tools/ftb-debug/ftb-debug-linux)
+    - [Linux (Arm)](https://dist.creeper.host/tools/ftb-debug/ftb-debug-linux-arm)
 
-	- **Tool Instructions** https://go.ftb.team/ftbdbg-support
+	- [FTB Debug tool instructions](https://go.ftb.team/ftbdbg-support)
 
   - Manually providing your logs [referenced in the next section](#which-logs-should-i-send)
 
