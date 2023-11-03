@@ -23,18 +23,18 @@
 	- `/pregen start gen radius <a_name_for_the_task> CIRCLE 0 0 <chunk_radius_to_pregenerate>`
 	- Remember that chunks are 16 blocks wide, so setting the chunk radius to 100 will generate chunks out to 1600 blocks from spawn (100 x 16) in all directions. Start with a number like 100 and then build from there. The bigger the radius you choose the longer it will take, some radiuses may take hours. This is normal, and you should run this when your players are offline for the best performance.
   - Many modern modpacks come with the Spark mod pre-installed (and if not, install it in your server's `mods` folder). Load into your server and follow these steps (note these commands are different than the singleplayer commands):
-	- Run `/spark profile start`
+	- Run `/spark profiler start`
 	- Play the game for a minute
-	- Run `/spark profile stop`
+	- Run `/spark profiler stop`
 
 ### My singleplayer world is really laggy!
   - Is your hardware good enough to run the modpack? Large modpacks can be intensive on an underpowered computer.
 	- Most modpacks require you to allocate between 4-8GB of memory (RAM). If your system only has 8GB or less you may be running into issues.
 	- Make sure you have a discrete GPU (such as Nvidia or AMD) to have the best experience playing modded Minecraft. If you don't you may run into issues, especially playing on larger modpacks.
   - Many modern modpacks come with the Spark mod pre-installed (and if not, install it in your modpack's `mods` folder). Load into your world and follow these steps (note that these commands are different than the server commands):
-	- Run `/sparkc profile start`
+	- Run `/sparkc profiler start`
 	- Play the game for a minute
-	- Run `/sparkc profile stop`
+	- Run `/sparkc profiler stop`
 
 ### My game crashed and I have a file called `hs_err_pidXXXX.log` in my modpack folder now!
   - Open the log with any text editor. Check for the mention of `atio6axx.dll` under `Problematic frame:`, if you find it it means there's a problem with an AMD driver on your computer.
