@@ -88,11 +88,9 @@
     - Make sure you own Minecraft on a Microsoft account. If you bought Minecraft when it was still using Mojang accounts, there was a deadline on Sept. 19th, 2023 to migrate to a Microsoft account. If you did not migrate, you do not own Minecraft anymore and will be unable to login with your Mojang credentials. Microsoft did send out a mercy email on that day which will allow anyone that didn't meet the deadline to get a new Minecraft account attached to their Microsoft account, up to 90 days from the deadline.
 
   - An error occurred whilst launching... Failed to execute asset update task:
-    - Check your FTB App's `latest.log` for lines that say `Tried URL: https://resources.download.minecraft.com/blah/blahblahblah...`. Take note specifically of the `/blah/blahblahblah` part. If only one `/blah/blahblahblah` is referenced in your log, you can replace it in your install. It is a vanilla Minecraft file that the launcher requires:
-      - Go to your specific `https://resources.download.minecraft.com/blah/blahblahblah` URL in your browser. 
-      - If using a Chromium browser (Chrome, Edge, Brave, etc) hover over the file player in the middle of the screen and click the 3 dots and download the file.
-      - In your File Explorer navigate to `C:/Users/<your_username>/AppData/Local/.ftba/bin/assets/objects` and find the folder with the first `blah` in your URL (if your URL ended in   `/e8/e8fddnjabdsf` find the `e8` folder).
-      - Copy the downloaded file into this directory and relaunch your FTB App.
+    - Check your FTB App's `latest.log` for lines that say `Tried URL: https://resources.download.minecraft.com/blah/blahblahblah...`. Take note specifically of the `/blah/blahblahblah` part. It is a vanilla Minecraft file that the launcher requires:
+      - In your File Explorer navigate to `C:/Users/<your_username>/AppData/Local/.ftba/bin/assets/objects` and find the folder with the first `blah` in your URL (if your URL ended in  `/e8/e8fddnjabdsf` find the `e8` folder and then the file called `e8fddnjabdsf`).
+      - Delete this file and relaunch your FTB App.
 
 ### Trying to sign in through Microsoft is giving me "We can't find the FTB App"!
   - If you are on a Mac use a browser other than Safari to log in with. When you login you can copy the URL at the top and paste it into another browser of your choice.
