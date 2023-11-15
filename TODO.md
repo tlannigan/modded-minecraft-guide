@@ -1,8 +1,8 @@
 # TODO
 
-**Higher priority**
+## Higher priority
 
-## FTB App UI Screenshots
+### FTB App UI Screenshots
 
 Text-form documentation is great, but some users are more visual
 and capturing/cropping a few screenshots from the FTB App could be
@@ -19,9 +19,9 @@ be a screenshot/s showing how to navigate the context menus next
 to the green play button of every instance where the `crash-reports`
 and `logs` directories can be quickly opened.
 
-**Lower Priority**
+## Lower Priority
 
-## Directing users to launcher instance logs/data**
+### Directing users to launcher instance logs/data**
 
 When it comes to directing users to where the FTB App stores its data,
 instance files, mod configs, etc., there will possibly be multiple
