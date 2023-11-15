@@ -8,9 +8,9 @@ Unless I'm blind, this case isn't covered yet.
 
 What happens is that the app is trying to download e.g.
 [this file](https://dist.modpacks.ch/modpacks/1/FTB%20Presents%20Direwolf20%201.20-1.2.0/config/71e8d5d4ffff87d852c3c1dcf2153aaa30c3d0be)
-and, for some reason, it can be downloaded fine in a browser,
-but within the app a 404 is recieved, leaving the instance
-install/upgrade in a failed state.
+and, for some reason, it can be sometimes be downloaded
+fine in a browser, but within the app a 404 is recieved,
+leaving the instance install/upgrade in a failed state.
 
 Knowing which SHA1 hash corresponds to a particular
 configuration file requires either (a) an awesome memory or (b)
@@ -20,7 +20,7 @@ lazy-yet-inefficient option of downloading file and
 quickly that the config file in question was
 `config/torchmaster.toml`.
 
-This particular instance was worked-around with a VPN, so it
+This particular instance was worked around with a VPN, so it
 seems possible that there's either a common-ish AV/firewall
 on (I suspect Windows) that is blocking access to
 `dist.modpacks.ch` or there is a transient issue occurring at
