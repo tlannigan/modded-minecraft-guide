@@ -1,0 +1,6 @@
+[book]
+authors = ["tlannigan"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Modded Minecraft Guide"
