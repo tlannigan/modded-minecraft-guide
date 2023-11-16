@@ -58,17 +58,26 @@ Logs can be provided in one of two ways:
 
     - [Linux (Arm)](https://dist.creeper.host/tools/ftb-debug/ftb-debug-linux-arm)
 
-### Which logs should I send?
-- My server is having issues:
-    - For server logs, you'll have to know where you put your server's folder, or find it on your hosting provider's control panel or FTP (depending on your host).
-    - Reference the [general logs section](#logs) and provide your `latest.log` and any crash reports that were created at the time the server crashed.
+## Which logs should I send?
 
-- My game client is having issues:
-    - FTB modpack folders on Windows systems are stored by default in `C:/Users/<your_username>/AppData/Local/.ftba/instances/<your_instance_ID>`
-    - Reference the [general logs section](#logs) and provide your `latest.log`, any crash reports that were created at the time you crashed, and look for any Java runtime crashes.
+-----
 
-- My FTB App is having issues:
-    - FTB App folders on Windows systems are stored by default in `C:/Users/<your_username>/AppData/Local/.ftba`
-	- In your FTB App's folder look for a folder called `logs`, open it and find a file called `latest.log` (or just `latest` if you have file extensions disabled).
+My server is having issues:
 
-Logs can be provided as-is in their original file format
+- For server logs, you'll have to know where you put your server's folder, or find it on your hosting provider's control panel or FTP (depending on your host).
+
+- Reference the [general logs section](debugging.md#logs) and provide your `latest.log` and any crash reports that were created at the time the server crashed.
+
+My game client is having issues:
+
+- FTB modpack folders on Windows systems are stored by default in `C:/Users/<your_username>/AppData/Local/.ftba/instances/<your_instance_ID>`.
+
+- Reference the [general logs section](debugging.md#logs) and provide your `latest.log`, any crash reports that were created at the time you crashed, and look for any Java runtime crashes.
+
+My FTB App is having issues:
+
+- FTB App folders on Windows systems are stored by default in `C:/Users/<your_username>/AppData/Local/.ftba`.
+
+- In your FTB App's folder look for a folder called `logs`, open it and find a file called `latest.log` (or just `latest` if you have file extensions disabled).
+
+Logs can be provided as-is in their original file format.

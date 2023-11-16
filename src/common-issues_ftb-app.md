@@ -50,4 +50,4 @@ If you are on a Mac use a browser other than Safari to log in with. When you log
 
 -----
 
-Take a look at the [general modded Minecraft errors](./common-issues.md) that are not specific to the FTB App.
+Take a look at the [general modded Minecraft errors](common-issues.md) that are not specific to the FTB App.
