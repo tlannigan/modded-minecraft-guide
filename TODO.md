@@ -62,34 +62,6 @@ on (I suspect Windows) that is blocking access to
 Creeperhost causing the download of these pack data files to
 fail.
 
-## Instance fails to install due to `java[w].exe` requiring elevation on Windows
-
-Not too common anymore apparently but used to crop up fairly often.  Can be evidenced by scanning the FTB App's `debug.log` file for errors that look like the following:
-
-```
-[13:31:03.823] [Instance Thread [1]/ERROR] [net.creeperhost.creeperlauncher.pack.InstanceLauncher]: Failed to start minecraft process!
-java.io.IOException: Cannot run program "C:\Users\...\.ftba\bin\runtime\jdk8u312-b07-jre\bin\javaw.exe" (in directory "C:\Users\...\.ftba\instances\..."): CreateProcess error=740, The requested operation requires elevation
-	at java.lang.ProcessBuilder.start(Unknown Source) ~[?:?]
-[...]
-	at net.creeperhost.creeperlauncher.pack.InstanceLauncher.lambda$launch$3(InstanceLauncher.java:162) ~[launcher-202310071959-918caed003-all.jar:?]
-	at java.lang.Thread.run(Unknown Source) ~[?:?]
-Caused by: java.io.IOException: CreateProcess error=740, The requested operation requires elevation
-[...]
-[13:31:04.243] [Instance Thread [1]/INFO] [net.creeperhost.creeperlauncher.pack.InstanceLauncher]: Setting phase: ERRORED
-```
-
-Seem to remember that one fix suggested by *someone* on the FTB Discord was to
-run the app with admin privs, but I'm reluctant (understatement) to ever
-recommend doing that.
-
-There is/was a guide put together by R3GEN that I *think* walked users
-through a manual fix involving extracting a JRE `.zip` file deep in the
-`.ftba/` directory.
-
-Assuming a fix for the common case is known, confirming what to do when users
-present with this issue would be nice.  Knowing what the root-cause is also
-would be a bonus.
-
 ## Basic usage of the FTB mods
 
 A decent fraction of questions in the `#help-and-support` channel
