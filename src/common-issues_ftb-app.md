@@ -13,7 +13,7 @@ Solutions for common issues that can occur during the use of the FTB App.
 | 000003 | Failed to login with Xbox                                       | Microsoft/Xbox issue.                                                                                                                                                                                                          |
 | 000004 | Failed to check games owned by account                          | Microsoft/Xbox issue.                                                                                                                                                                                                          |
 | 000005 | Failed to find user's Minecraft profile                         | Launch `Minecraft: Java Edition` in the vanilla launcher at least once.                                                                                                                                                        |
-| 000006 | Account does not own Minecraft                                  | Verify you are logging in with the right Microsoft account. If the account absolutely owns Minecraft, try deleting `profiles.json` file in the [FTB App directory](launcher_ftb-app.md#find-the-default-directory-by-either)   |
+| 000006 | Account does not own Minecraft                                  | Verify you are logging in with the right Microsoft account. If the account absolutely owns Minecraft, try deleting `profiles.json` file in the [FTB App directory](launcher_ftb-app.md#find-the-default-directory-by-either).  |
 | 000012 | Account does not have an Xbox Live account                      | Microsoft set a deadline of Sept. 19th, 2023 for all Mojang accounts to migrate to Microsoft accounts. If you didn't migrate you no longer own Minecraft.                                                                      |
 | 000013 | Account is from a region that does not support Xbox Live        | Create an Xbox account in a region supported by Xbox Live.                                                                                                                                                                     |
 | 000014 | Account needs adult verification from Xbox                      | Have an adult in your Xbox Family allow your access.                                                                                                                                                                           |
@@ -44,4 +44,8 @@ Take note specifically of the `/blah/blahblahblah` part. It is a vanilla Minecra
 
 -----
 
-- If you are on a Mac use a browser other than Safari to log in with. When you login you can copy the URL at the top and paste it into another browser of your choice.
+If you are on a Mac use a browser other than Safari to log in with. When you login you can copy the URL at the top and paste it into another browser of your choice.
+
+## Haven't found your issue?
+
+Take a look at the [general modded Minecraft errors](./common-issues.md) that are not specific to the FTB App.

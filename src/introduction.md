@@ -13,4 +13,4 @@
   - Crash reports that can usually be found under `crash-reports` in your modpack folder. These are *usually* named `crash-DATETIME-client.txt` or `crash-DATETIME-server.txt`.
   - Java Runtime crashes that can usually be found in the root of your modpack folder. These are *usually* named `hs_err_pid###.log`.
 
-- Logs can be provided as-is in their original file format, or they can be uploaded to a website such as https://mclo.gs to strip any identifying information and make debugging easier for those helping you. Copy the URL to share it with others.
+- Logs can be provided as-is in their original file format.
