@@ -2,6 +2,41 @@
 
 ## Higher priority
 
+## Connection to server fails with errors noting identical mod versions
+
+Players will sometimes come to the Discord complaining that they're trying to
+connect to a server which they say is running with exactly the same set of mods
+as exist on the server side, and they're being disconnected with this error
+message:
+
+![Screenshot](https://cdn.discordapp.com/attachments/560188834592063488/1174702001255366787/Direwolf20.png?ex=65688d7e&is=6556187e&hm=34b27ebdcb7ff85fbc1ecae239c6b9156895c3a8a21eafb73ddeae23acce609d&)
+
+This has been blamed on an apparently long-standing bug in Forge (and now of
+course NeoForge) in the past, with little further explaination, link to an open
+GitHub issue, etc.
+
+In older versions of Forge (1.18.2 at least), this error was much more cryptic
+without hinting at the registry factor, so logs would need to be checked to
+see if mods are missing (less likely, should result in different error), channel
+mismatches, registry mismatches, etc., which might point at the below being true.
+
+One message[1] on the NeoForge Discord server hints at KubeJS scripts which
+modify the registry not being in sync, but at least for the Direwolf20 1.20
+pack, there are no such registry changes.  Config files not marrying up
+(where e.g. the config on one side enables an item and the other disables it)
+would also cause registry inconsistencies.
+
+Things to check when this comes up *for FTB packs only*:
+
+  1.  What launcher is being used?
+
+  2.  If the FTB App, recommend install of second instance to rule out bad a
+      installation
+
+  3.  If not the FTB App, how was the client-side instance created?
+
+[1] https://discord.com/channels/313125603924639766/437001959950778368/1167862103504334899
+
 ## Download attempt failed for: https://dist.modpacks.ch/modpacks/blah
 
 Unless I'm blind, this case isn't covered yet.
@@ -26,6 +61,34 @@ on (I suspect Windows) that is blocking access to
 `dist.modpacks.ch` or there is a transient issue occurring at
 Creeperhost causing the download of these pack data files to
 fail.
+
+## Instance fails to install due to `java[w].exe` requiring elevation on Windows
+
+Not too common anymore apparently but used to crop up fairly often.  Can be evidenced by scanning the FTB App's `debug.log` file for errors that look like the following:
+
+```
+[13:31:03.823] [Instance Thread [1]/ERROR] [net.creeperhost.creeperlauncher.pack.InstanceLauncher]: Failed to start minecraft process!
+java.io.IOException: Cannot run program "C:\Users\...\.ftba\bin\runtime\jdk8u312-b07-jre\bin\javaw.exe" (in directory "C:\Users\...\.ftba\instances\..."): CreateProcess error=740, The requested operation requires elevation
+	at java.lang.ProcessBuilder.start(Unknown Source) ~[?:?]
+[...]
+	at net.creeperhost.creeperlauncher.pack.InstanceLauncher.lambda$launch$3(InstanceLauncher.java:162) ~[launcher-202310071959-918caed003-all.jar:?]
+	at java.lang.Thread.run(Unknown Source) ~[?:?]
+Caused by: java.io.IOException: CreateProcess error=740, The requested operation requires elevation
+[...]
+[13:31:04.243] [Instance Thread [1]/INFO] [net.creeperhost.creeperlauncher.pack.InstanceLauncher]: Setting phase: ERRORED
+```
+
+Seem to remember that one fix suggested by *someone* on the FTB Discord was to
+run the app with admin privs, but I'm reluctant (understatement) to ever
+recommend doing that.
+
+There is/was a guide put together by R3GEN that I *think* walked users
+through a manual fix involving extracting a JRE `.zip` file deep in the
+`.ftba/` directory.
+
+Assuming a fix for the common case is known, confirming what to do when users
+present with this issue would be nice.  Knowing what the root-cause is also
+would be a bonus.
 
 ## Basic usage of the FTB mods
 
