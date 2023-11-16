@@ -68,16 +68,14 @@ My server is having issues:
 
 - Reference the [general logs section](debugging.md#logs) and provide your `latest.log` and any crash reports that were created at the time the server crashed.
 
-My game client is having issues:
+My Minecraft client is having issues:
 
-- FTB modpack folders on Windows systems are stored by default in `C:/Users/<your_username>/AppData/Local/.ftba/instances/<your_instance_ID>`.
+- FTB modpack folders can be found by opening the modpack's page in the FTB App, clicking `Settings` on the right, then click `Open Folder` at the bottom.
 
 - Reference the [general logs section](debugging.md#logs) and provide your `latest.log`, any crash reports that were created at the time you crashed, and look for any Java runtime crashes.
 
 My FTB App is having issues:
 
-- FTB App folders on Windows systems are stored by default in `C:/Users/<your_username>/AppData/Local/.ftba`.
-
-- In your FTB App's folder look for a folder called `logs`, open it and find a file called `latest.log` (or just `latest` if you have file extensions disabled).
+- In your [FTB App's folder](#how-to-find-the-default-directory) look for a folder called `logs`, open it and find a file called `latest.log` (or just `latest` if you have file extensions disabled).
 
 Logs can be provided as-is in their original file format.
