@@ -1,7 +1,8 @@
 # Summary
 
 [Introduction](./introduction.md)
-[Debugging issues](./debugging.md)
+[Debugging](./debugging.md)
+- [Common issues](./common-issues.md)
 
 # Launchers
 
