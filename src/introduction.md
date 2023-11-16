@@ -1,4 +1,4 @@
-# Modded Minecraft Help
+# Modded Minecraft Guide
 
 - This documentation is for users and server operators experiencing issues with modded Minecraft, including singleplayer worlds, servers, and various third-party Minecraft launchers.
 
