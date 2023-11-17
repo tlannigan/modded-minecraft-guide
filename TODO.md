@@ -108,6 +108,7 @@ and `logs` directories can be quickly opened.
 ### Spotting cracked clients
 
 Checking the first line of a `latest.log` for `--userType, mojang, --versionType` hints at a cracked client.
+Check for legitimate usernames on [https://namemc.com/]
 
 ## Lower Priority
 
