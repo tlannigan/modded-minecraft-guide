@@ -70,6 +70,10 @@ be a screenshot/s showing how to navigate the context menus next
 to the green play button of every instance where the `crash-reports`
 and `logs` directories can be quickly opened.
 
+### Spotting cracked clients
+
+Checking the first line of a `latest.log` for `--userType, mojang, --versionType` hints at a cracked client.
+
 ## Lower Priority
 
 ### Directing users to launcher instance logs/data**
