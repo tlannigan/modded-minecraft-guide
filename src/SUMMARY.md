@@ -9,8 +9,6 @@
 - [Debugging](debugging.md)
     - [Common issues](common-issues.md)
 
------
-
 # Launchers
 
 - [FTB App](launcher_ftb-app.md)
