@@ -8,3 +8,4 @@ title = "Modded Minecraft Guide"
 [output.html]
 git-repository-url = "https://github.com/tlannigan/modded-minecraft-guide"
 default-theme = "ayu"
+preferred-dark-theme = "ayu"
