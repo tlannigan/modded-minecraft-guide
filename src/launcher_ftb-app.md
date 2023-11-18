@@ -8,7 +8,7 @@ The FTB App is the first-party software for installing FTB modpacks, ensuring th
 
 -----
 
-### How to find the default directory
+### How to find the default folder
 
 - #### Windows
     - Press `Windows + R` and type `%localappdata%/.ftba`.
@@ -17,7 +17,7 @@ The FTB App is the first-party software for installing FTB modpacks, ensuring th
 - #### Linux
     - Navigate to the `~/.ftba` directory.
 
-### Directory contents
+### Folder contents
 
 - `/.doh_cache` - Folder for DNS over HTTPS, containing DNS communication information
 
@@ -69,7 +69,7 @@ Logs can be provided in one of two ways:
 
 ### My server is having issues:
 
-- For server logs, you'll have to know where you put your server's folder, or find it on your hosting provider's control panel or FTP (depending on your host).
+- For server logs, you'll have to know where you put your server's folder, or find it on your hosting provider's control panel or through FTP (depending on your host).
 
 - Reference the [general logs section](debugging.md#logs) and provide your `latest.log` and any crash reports that were created at the time the server crashed.
 
@@ -81,6 +81,6 @@ Logs can be provided in one of two ways:
 
 ### My FTB App is having issues:
 
-- In your [FTB App's folder](#how-to-find-the-default-directory) look for a folder called `logs`, open it and find a file called `latest.log` (or just `latest` if you have file extensions disabled).
+- In your [FTB App's folder](#how-to-find-the-default-folder) look for a folder called `logs`, open it and find a file called `latest.log` or `latest`.
 
 Logs can be provided as-is in their original file format.
