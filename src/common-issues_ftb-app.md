@@ -6,19 +6,19 @@ Solutions for common issues that can occur during the use of the FTB App.
 
 ## FTB-AUTH Errors
 
-| Code   | Error                                                           | Solution                                                                                                                                                                                                                       |
-|--------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 000001 | Failed to authenticate with Xbox Live                           | Microsoft/Xbox issue.                                                                                                                                                                                                          |
-| 000002 | Failed to authenticate with Xbox Secure Token Service (XSTS)    | Microsoft/Xbox issue.                                                                                                                                                                                                          |
-| 000003 | Failed to login with Xbox                                       | Microsoft/Xbox issue.                                                                                                                                                                                                          |
-| 000004 | Failed to check games owned by account                          | Microsoft/Xbox issue.                                                                                                                                                                                                          |
-| 000005 | Failed to find user's Minecraft profile                         | Launch `Minecraft: Java Edition` in the vanilla launcher at least once.                                                                                                                                                        |
-| 000006 | Account does not own Minecraft                                  | Verify you are logging in with the right Microsoft account. If the account absolutely owns Minecraft, try deleting `profiles.json` file in the [FTB App directory](launcher_ftb-app.md#find-the-default-directory-by-either).  |
-| 000012 | Account does not have an Xbox Live account                      | Microsoft set a deadline of Sept. 19th, 2023 for all Mojang accounts to migrate to Microsoft accounts. If you didn't migrate you no longer own Minecraft.                                                                      |
-| 000013 | Account is from a region that does not support Xbox Live        | Create an Xbox account in a region supported by Xbox Live.                                                                                                                                                                     |
-| 000014 | Account needs adult verification from Xbox                      | Have an adult in your Xbox Family allow your access.                                                                                                                                                                           |
-| 000015 | Account is under 18                                             | You must be 18 or have adult consent to use the FTB App.                                                                                                                                                                       |
-| 000016 | Other error logging into Xbox                                   | Unknown error.                                                                                                                                                                                                                 |
+| Code   | Error                                                                       | Solution                                                                                                                                                                                                                       |
+|--------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 000001 | Failed to authenticate with Xbox Live                                       | Microsoft/Xbox issue.                                                                                                                                                                                                          |
+| 000002 | Failed to authenticate with Xbox Secure Token Service (XSTS)                | Microsoft/Xbox issue.                                                                                                                                                                                                          |
+| 000003 | Failed to login with Xbox                                                   | Microsoft/Xbox issue.                                                                                                                                                                                                          |
+| 000004 | Unable to verify account entitlements                                       | You've likely logged in with the wrong account.                                                                                                                                                                                |
+| 000005 | Failed to find user's Minecraft profile                                     | Launch `Minecraft: Java Edition` in the vanilla launcher at least once.                                                                                                                                                        |
+| 000006 | Account does not own Minecraft                                              | Verify you are logging in with the right Microsoft account. If the account absolutely owns Minecraft, try deleting `profiles.json` file in the [FTB App directory](launcher_ftb-app.md#find-the-default-directory-by-either).  |
+| 000012 | Account does not have an Xbox Live account                                  | Microsoft set a deadline of Sept. 19th, 2023 for all Mojang accounts to migrate to Microsoft accounts. If you didn't migrate you no longer own Minecraft.                                                                      |
+| 000013 | Account is from a region that does not support Xbox Live                    | Create an Xbox account in a region supported by Xbox Live.                                                                                                                                                                     |
+| 000014 | Account needs adult verification from Xbox                                  | Have an adult in your Xbox Family allow your access.                                                                                                                                                                           |
+| 000015 | Account is under 18                                                         | You must be 18 or have adult consent to use the FTB App.                                                                                                                                                                       |
+| 000016 | Account has been rejected by Xbox Live services for an unknown reason       | Unknown error.                                                                                                                                                                                                                 |
 
 ## The FTB App says I don't own Minecraft
 
@@ -44,7 +44,13 @@ Take note specifically of the `/blah/blahblahblah` part. It is a vanilla Minecra
 
 -----
 
-If you are on a Mac use a browser other than Safari to log in with. When you login you can copy the URL at the top and paste it into another browser of your choice.
+Using Brave or Safari browsers often cause issues signing into the FTB App. Try disabling Brave Shield or use a different browse. Copy the URL at the top and paste it into another browser of your choice.
+
+## Caused by: java.security.cert.CertificateNotYetValidException in `debug.log`
+
+-----
+
+Your computer's date and time are set incorrectly. Allow Windows to set it [automatically](https://support.microsoft.com/en-us/windows/how-to-set-your-time-and-time-zone-dfaa7122-479f-5b98-2a7b-fa0b6e01b261) for you.
 
 ## Haven't found your issue?
 

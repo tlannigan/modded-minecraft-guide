@@ -2,7 +2,7 @@
 
 -----
 
-Say something informative about the FTB App
+The FTB App is the first-party software for installing FTB modpacks, ensuring the FTB modpacks you download are in their intended form and have the most up-to-date versions available. The FTB App also supports CurseForge modpacks, and downloads CurseForge mods using the CurseForge API to support mod developers.
 
 ## Files and folders
 
@@ -10,7 +10,12 @@ Say something informative about the FTB App
 
 ### How to find the default directory
 
-- Pressing `Windows + R` and typing `%localappdata%/.ftba`
+- #### Windows
+    - Press `Windows + R` and type `%localappdata%/.ftba`.
+- #### MacOS
+    - Open a new Terminal and type `open ~/Library/Application\ Support/.ftba`.
+- #### Linux
+    - Navigate to the `~/.ftba` directory.
 
 ### Directory contents
 
@@ -62,19 +67,19 @@ Logs can be provided in one of two ways:
 
 -----
 
-My server is having issues:
+### My server is having issues:
 
 - For server logs, you'll have to know where you put your server's folder, or find it on your hosting provider's control panel or FTP (depending on your host).
 
 - Reference the [general logs section](debugging.md#logs) and provide your `latest.log` and any crash reports that were created at the time the server crashed.
 
-My Minecraft client is having issues:
+### My Minecraft client is having issues:
 
 - FTB modpack folders can be found by opening the modpack's page in the FTB App, clicking `Settings` on the right, then click `Open Folder` at the bottom.
 
 - Reference the [general logs section](debugging.md#logs) and provide your `latest.log`, any crash reports that were created at the time you crashed, and look for any Java runtime crashes.
 
-My FTB App is having issues:
+### My FTB App is having issues:
 
 - In your [FTB App's folder](#how-to-find-the-default-directory) look for a folder called `logs`, open it and find a file called `latest.log` (or just `latest` if you have file extensions disabled).
 
