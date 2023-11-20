@@ -12,7 +12,7 @@
 
     - Remember that chunks are 16 blocks wide, so setting the chunk radius to 100 will generate chunks out to 1600 blocks from spawn (100 x 16) in all directions. Start with a number like 100 and then build from there. The bigger the radius you choose the longer it will take, some radiuses may take hours. This is normal, and you should run this when your players are offline for the best performance.
 
-- Many modern modpacks come with the Spark mod pre-installed (and if not, install it in your server's `mods` folder). Load into your server and follow these steps (note these commands are different than the singleplayer commands):
+- Many modern modpacks come with the Spark mod pre-installed (and if not, install it in your server's `mods` folder). Load into your server and follow these steps:
 
     - Run `/spark profiler start`
 
@@ -30,13 +30,13 @@
 
     - Make sure you have a discrete GPU (such as Nvidia or AMD) to have the best experience playing modded Minecraft. If you don't you may run into issues, especially playing on larger modpacks.
 
-- Many modern modpacks come with the Spark mod pre-installed (and if not, install it in your modpack's `mods` folder). Load into your world and follow these steps (note that these commands are different than the server commands):
+- Many modern modpacks come with the Spark mod pre-installed (and if not, install it in your modpack's `mods` folder). Load into your world and follow these steps:
 
-    - Run `/sparkc profiler start`
+    - Run `/spark profiler start`
 
     - Play the game for a minute
 
-    - Run `/sparkc profiler stop`
+    - Run `/spark profiler stop`
 
 ## My game crashed and I have a file called `hs_err_pidXXXX.log` in my modpack folder now
 
