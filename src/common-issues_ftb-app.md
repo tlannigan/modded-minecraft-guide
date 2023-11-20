@@ -32,9 +32,9 @@ Make sure you own Minecraft on a Microsoft account. If you bought Minecraft when
 
 Check the `latest.log` file in the [FTB App folder](launcher_ftb-app.md#my-ftb-app-is-having-issues) for lines that say:
 
-`Tried URL: https://resources.download.minecraft.com/blah/blahblahblah...`
+`Tried URL: 'https://resources.download.minecraft.net/blah/blahblahblah...'`
 
-Take note specifically of the `/blah/blahblahblah` part. It is a vanilla Minecraft file that the launcher requires:
+Take note specifically of the `/blah/blahblahblah` part, and if you have multiple `Tried URL` lines only pay attention ones with unique `blah/blahblahblah` portions. It is a vanilla Minecraft file that the launcher requires:
 
 1. In File Explorer navigate to `C:/Users/<your_username>/AppData/Local/.ftba/bin/assets/objects` and find the folder with the first `blah` in the URL (if the URL ended in  `/e8/e8fddnjabdsf` find the `e8` folder and then the file called `e8fddnjabdsf`).
 
